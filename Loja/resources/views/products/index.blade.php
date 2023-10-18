@@ -22,4 +22,5 @@
      
     </tbody>
 </table>
-<a href="{{route('products.create')}}">Criar produto</a>
+<button><a href="{{route('products.create')}}">Criar produto</a></button>
+<button><a href="{{route('categories.create')}}">Criar Categoria</a></button>

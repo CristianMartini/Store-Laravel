@@ -32,7 +32,7 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
-        return view('products.edit',  ['product' => $product]);
+        return view('products.edit',  ['product' => $product, 'categories'=>Category::all()]);
     }
 
     public function update(Request $request, Product $product)

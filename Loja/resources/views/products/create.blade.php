@@ -19,9 +19,9 @@
         <select name="category_id" >
             @foreach ($categories as $category)
         <option value="{{ $category->id }}">{{"$category->name"}}</option>
-    </div>
+    </div>@endforeach
     </select>
         
-    @endforeach
+    
     <button type="submit">Criar produto</button>
 </form>

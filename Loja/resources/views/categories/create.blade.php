@@ -12,5 +12,6 @@
          
     
     <button type="submit">Criar categoria</button>
+    <button><a href="{{route('products.index')}}">Home</button>
    
 </form>

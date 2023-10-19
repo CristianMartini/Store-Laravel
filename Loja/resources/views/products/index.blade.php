@@ -5,7 +5,8 @@
             <th>
                 Produtos
             </th>
-            <th>Quantidade de Produtos</th>
+            <th>Descriçao</th>
+            <th>Preço</th>
         </tr>
     </thead>
     <tbody>
@@ -16,8 +17,10 @@
             </td>
             <td>{{$product->description}}</td>
             <td>R${{$product->price}}</td>
-        
+        <td><button><a href="{{route('products.edit',$product->id)}}">Editar</button></td>
+            <td><button><a href="{{route('products.show',$product->id)}}">Ver Produto</button></td>
         </tr>
+
         @endforeach
      
     </tbody>
